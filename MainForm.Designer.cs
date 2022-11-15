@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.subjectTextBox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.subjectText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -86,7 +86,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.subjectTextBox);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.subjectText);
             this.panel2.Location = new System.Drawing.Point(110, 274);
@@ -95,16 +95,16 @@
             this.panel2.Size = new System.Drawing.Size(405, 41);
             this.panel2.TabIndex = 6;
             // 
-            // textBox3
+            // subjectTextBox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(10, 10);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(385, 20);
-            this.textBox3.TabIndex = 3;
+            this.subjectTextBox.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.subjectTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.subjectTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subjectTextBox.ForeColor = System.Drawing.Color.White;
+            this.subjectTextBox.Location = new System.Drawing.Point(10, 10);
+            this.subjectTextBox.Name = "subjectTextBox";
+            this.subjectTextBox.Size = new System.Drawing.Size(385, 20);
+            this.subjectTextBox.TabIndex = 3;
             // 
             // textBox1
             // 
@@ -382,7 +382,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox recipientText;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox subjectTextBox;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox messageText;
         private System.Windows.Forms.TextBox textBox2;

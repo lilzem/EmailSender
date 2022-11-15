@@ -65,7 +65,7 @@ namespace EmailSender
         private void sendBtn_Click(object sender, EventArgs e)
         {
             var message = new MailMessage(emailText.Text, recipientText.Text);
-            message.Subject = subjectText.Text;
+            message.Subject = subjectTextBox.Text;
             message.Body = messageText.Text;
             
             using (SmtpClient mailer = new SmtpClient("smtp.gmail.com", 587))
@@ -109,7 +109,9 @@ namespace EmailSender
             MailMessage m = e.Client.GetMessage(e.MessageUID, FetchOptions.Normal);
             f.Invoke((MethodInvoker)delegate
             {
-                f.receiveText.AppendText("From: " + m.From + "\n" + "Subject: " + m.Subject + "\n" + "Body :" + m.Body + "\n");
+                f.receiveText.AppendText("From: " + m.From + Environment.NewLine + 
+                                         "Subject: " + m.Subject + Environment.NewLine + 
+                                         "Body :" + m.Body + Environment.NewLine);
             });
         }
     }
